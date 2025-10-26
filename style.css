@@ -1,0 +1,122 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #0d1b2a, #1b263b);
+  color: white;
+  overflow-x: hidden;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1b263b;
+  padding: 1em 2em;
+  box-shadow: 0 0 15px #00b4d8;
+}
+.logo {
+  font-size: 1.8em;
+  color: #90e0ef;
+  text-shadow: 0 0 10px #00b4d8;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1.5em;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+nav a:hover {
+  color: #00b4d8;
+}
+section {
+  padding: 3em 2em;
+  text-align: center;
+}
+h2 {
+  color: #90e0ef;
+  margin-bottom: 1em;
+  text-shadow: 0 0 10px #00b4d8;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+ul li {
+  margin: 0.5em 0;
+}
+.galeria {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  flex-wrap: wrap;
+}
+.galeria img {
+  width: 250px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0,180,216,0.4);
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  width: 90%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+input, textarea {
+  width: 100%;
+  padding: 0.8em;
+  border-radius: 5px;
+  border: none;
+}
+button {
+  background: #00b4d8;
+  color: white;
+  border: none;
+  padding: 0.8em 1.5em;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+button:hover {
+  background: #0077b6;
+}
+footer {
+  background: #1b263b;
+  text-align: center;
+  padding: 1em;
+  font-size: 0.9em;
+}
+.wpp, .insta {
+  position: fixed;
+  bottom: 20px;
+  font-size: 2em;
+  text-decoration: none;
+}
+.wpp { right: 20px; color: #25d366; }
+.insta { right: 70px; color: #e1306c; }
+
+.snowflakes {
+  position: fixed;
+  top: 0; left: 0; width: 100%; height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+}
+.flake {
+  position: absolute;
+  top: -10px;
+  width: 8px; height: 8px;
+  background: white;
+  border-radius: 50%;
+  animation: fall linear infinite;
+}
+@keyframes fall {
+  to {
+    transform: translateY(100vh);
+  }
+}
